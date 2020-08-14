@@ -10,14 +10,17 @@ var main = {
 
         $('#btn-update').on('click', function() {
 
-        var id = $('#id').val();
-
-            console.log(id)
             _this.update();
         });
+
+        $('#btn-delete').on('click', function() {
+
+            _this.delete();
+        })
     },
 
     save : function() {
+
         var data = {
             title: $('#title').val(),
             author: $('#author').val(),
@@ -39,6 +42,7 @@ var main = {
     },
 
     update : function() {
+
         var data = {
             title: $('#title').val(),
             content: $('#content').val()
@@ -58,6 +62,23 @@ var main = {
             }).fail(function(error) {
                console.log(JSON.stringify(error))
             });
+    },
+
+    delete : function() {
+
+        var id = $('#id').val();
+
+        $.ajax({
+            type: 'DELETE',
+            url: '/api/board/' + id,
+            dataType: 'json',
+            contentType:'application/json; charset=utf-8'
+        }).done(function() {
+            alert("삭제되었습니다.");
+            window.location.href = '/board';
+        }).fail(function(error){
+            console.log(JSON.stringify(error));
+        })
     }
 
 };
