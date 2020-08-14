@@ -2,12 +2,16 @@ package com.resume.portfolio.test.service.board;
 
 import com.resume.portfolio.test.domain.board.Board;
 import com.resume.portfolio.test.domain.board.BoardRepository;
+import com.resume.portfolio.test.web.dto.board.BoardListResponseDto;
 import com.resume.portfolio.test.web.dto.board.BoardResponseDto;
 import com.resume.portfolio.test.web.dto.board.BoardSaveRequestDto;
 import com.resume.portfolio.test.web.dto.board.BoardUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -36,4 +40,12 @@ public class BoardService {
 
         return new BoardResponseDto(entity);
     }
+    @Transactional(readOnly = true)
+    public List<BoardListResponseDto> findAllDesc() {
+
+        return boardRepository.findAllDesc().stream()
+                                    .map(BoardListResponseDto::new)
+                                    .collect(Collectors.toList());
+    }
+
  }

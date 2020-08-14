@@ -12,9 +12,4 @@ public class IndexController {
         return "index";
     }
 
-    @GetMapping("/board/save")
-    public String boardSave() {
-
-        return "/board/board-save";
-    }
 }
