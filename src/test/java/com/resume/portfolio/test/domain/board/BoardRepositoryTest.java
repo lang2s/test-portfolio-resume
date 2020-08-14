@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -48,7 +48,7 @@ public class BoardRepositoryTest {
     @Test
     public void BaseTimeEntity_등록() {
         // given
-        LocalDateTime now = LocalDateTime.of(2019,6,4,0,0,0,0);
+        LocalDate now = LocalDate.of(2019,6,4);
         boardRepository.save(Board.builder()
                             .title("title")
                             .content("content")
