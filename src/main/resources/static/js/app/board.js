@@ -1,7 +1,8 @@
-var main = {
+var board = {
 
     init : function() {
-        var _this = this;
+
+       var _this = this;
 
         $('#btn-save').on('click', function() {
 
@@ -10,13 +11,30 @@ var main = {
 
         $('#btn-update').on('click', function() {
 
-            _this.update();
+            var email = $('#user-email').val()
+            var author = $('#author').val()
+
+                if(email === author) {
+                    _this.update();
+                }else {
+                    alert("로그인 사용자가 일치하지않습니다.")
+                    location.reload();
+                }
+
         });
 
         $('#btn-delete').on('click', function() {
 
-            _this.delete();
-        })
+            var email = $('#user-email').val()
+            var author = $('#author').val()
+
+                   if(email === author) {
+                       _this.delete();
+                   }else {
+                       alert("로그인 사용자가 일치하지않습니다.")
+                   }
+        });
+
     },
 
     save : function() {
@@ -24,7 +42,8 @@ var main = {
         var data = {
             title: $('#title').val(),
             author: $('#author').val(),
-            content: $('#content').val()
+            content: $('#content').val(),
+
         };
 
         $.ajax({
@@ -37,7 +56,7 @@ var main = {
             alert('글이 등록되었습니다.');
             window.location.href = '/board';
         }).fail(function (error) {
-            alert(JSON.stringify(error));
+            alert('로그인을 해주세요')
         });
     },
 
@@ -83,4 +102,4 @@ var main = {
 
 };
 
-main.init();
+board.init();
