@@ -21,7 +21,7 @@ public class IndexController {
             System.out.println("=========== user_Role: ");
         }
 
-        return "index";
+        return "/index";
     }
 
 }
