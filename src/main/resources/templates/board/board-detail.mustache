@@ -32,8 +32,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="btn-update">등록</button>
-                    <a href="/board/detail/{{board.id}}" role="button" class="btn btn-secondary">취소</a>
+                    <button type="button" class="btn btn-warning active" id="btn-update">등록</button>
+                    <a href="/board/detail/{{board.id}}" role="button" class="btn btn-light">취소</a>
                 </div>
             </div>
         </div>
@@ -68,14 +68,14 @@
                         <div class="col-md-12" style="text-align: right;">
                          {{#userList}}
                             <!-- modal 버튼 -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_update">
+                            <button type="button" class="btn btn-warning active" data-toggle="modal" data-target="#myModal_update">
                                 수정
                             </button>
-                            <button type="button" class="btn btn-primary" id="btn-delete">
+                            <button type="button" class="btn btn-danger active" id="btn-delete">
                                 삭제
                             </button>
                          {{/userList}}
-                            <a href="/board" role="button" class="btn btn-secondary">취소</a>
+                            <a href="/board" role="button" class="btn btn-light active">취소</a>
                         </div>
                     </div>
                     <!-- /글 수정, 삭제 -->

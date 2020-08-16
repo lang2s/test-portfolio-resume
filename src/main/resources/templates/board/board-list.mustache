@@ -14,12 +14,12 @@
             <div class="col-md-12" style="text-align: right;">
                 <!-- modal 버튼 -->
             {{^userList}}
-                <button type="button" class="btn btn-primary" id="btn-modal" onclick="alert('로그인을 해주세요')">
+                <button type="button" class="btn btn-warning active" id="btn-modal" onclick="alert('로그인을 해주세요')">
                     글 작성
                 </button>
             {{/userList}}
             {{#userList}}
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_save">
+                <button type="button" class="btn btn-warning active" data-toggle="modal" data-target="#myModal_save">
                     글 작성
                 </button>
             {{/userList}}
