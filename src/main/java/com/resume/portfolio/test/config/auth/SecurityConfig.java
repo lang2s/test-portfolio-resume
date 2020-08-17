@@ -18,7 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable().headers().frameOptions().disable()
                     .and()
                         .authorizeRequests()     // url 권한관리 시작점
-                            .antMatchers("/", "/css/**", "/images/**", "/js/**", "/lib/**", "/img/**",
+                            .antMatchers("/", "/css/**", "/images/**", "/js/**", "/lib/**", "/img/**", "/hello/**",
                                                             "/board/**", "/about/**", "/works/**", "/favicon.ico", "/h2-console/**").permitAll()  // permitAll 전체열람 권한
                             .antMatchers("/api/board/**").hasRole(Role.USER.name())         // USER 권한을 가진 사람만 가능
                             .antMatchers("/*/**").hasRole(Role.ADMIN.name())                  // ADMIN 권한
