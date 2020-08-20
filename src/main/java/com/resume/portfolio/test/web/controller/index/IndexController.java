@@ -1,4 +1,4 @@
-package com.resume.portfolio.test.web;
+package com.resume.portfolio.test.web.controller.index;
 
 import com.resume.portfolio.test.config.auth.LoginUser;
 import com.resume.portfolio.test.config.auth.dto.SessionUser;
