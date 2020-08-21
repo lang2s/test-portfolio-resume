@@ -18,7 +18,7 @@ public class IndexController {
                                                                                         // httpSession.getAttribute("user")에서 값을 가져올 수 있다
         if (user != null) { // 세션에 저장된 값이 있을때만 model에 userName으로 등록 세션에 저장된값이 없으면 model에 아무런 값이 없는 상태
             model.addAttribute("userList", user);
-            System.out.println("=========== user_Role: ");
+            System.out.println("=========== user_Role: " + user);
         }
 
         return "/index";
