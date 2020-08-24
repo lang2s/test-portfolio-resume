@@ -1,4 +1,4 @@
-# test-portfolio-resume(무중단 배포)
+# test-portfolio-resume(무중단 배포 nginx)
 + intelliJ
 + Gradle 4.10.2 
 + java8(JDK 1.8)
@@ -9,7 +9,7 @@
 + SpringDataJpa & Querydsl
 + Mustache, bootstrap 4.3.1
 + OAuth2
-+ AWS(IaaS), RDS(MariaDB), E3, CodeDeploy, EC2, putty, nginx
++ AWS(IaaS), RDS(MariaDB), E3, CodeDeploy, EC2, putty
 + google, Naver login Api
 + Travis Ci
 --------------------------------------------------------------------
