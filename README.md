@@ -1,4 +1,4 @@
-# test-portfolio-resume(무중단 배포 nginx)
+# test-portfolio-resume(무중단 배포 nginx)  [![Build Status](https://travis-ci.org/lang2s/test-portfolio-resume.svg?branch=master)](https://travis-ci.org/lang2s/test-portfolio-resume)
 + intelliJ
 + Gradle 4.10.2 
 + java8(JDK 1.8)
