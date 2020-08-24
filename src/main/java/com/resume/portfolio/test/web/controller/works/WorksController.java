@@ -9,6 +9,6 @@ public class WorksController {
     @GetMapping("/works")
     public String works() {
 
-        return "/works/works";
+        return "works/works";
     }
 }
