@@ -14,6 +14,9 @@ var board = {
             var email = $('#user-email').val()
             var author = $('#author').val()
 
+            console.log(email)
+            console.log(author)
+
                 if(email === author) {
                     _this.update();
                 }else {
