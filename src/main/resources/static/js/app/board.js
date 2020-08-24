@@ -9,7 +9,7 @@ var board = {
             _this.save();
         });
 
-        $('#btn-update').on('click', function() {
+        $('#btn-update-before').on('click', function(){
 
             var email = $('#user-email').val()
             var author = $('#author').val()
@@ -17,13 +17,16 @@ var board = {
             console.log(email)
             console.log(author)
 
-                if(email === author) {
-                    _this.update();
-                }else {
-                    alert("로그인 사용자가 일치하지않습니다.")
-                    location.reload();
-                }
+            if(email != author) {
 
+                alert("로그인 사용자가 일치하지않습니다.")
+                location.reload();
+            }
+        });
+
+        $('#btn-update').on('click', function() {
+
+           _this.update();
         });
 
         $('#btn-delete').on('click', function() {
