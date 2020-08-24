@@ -1,4 +1,4 @@
-# test-portfolio-resume
+# test-portfolio-resume(무중단 배포)
 + intelliJ
 + Gradle 4.10.2 
 + java8(JDK 1.8)
