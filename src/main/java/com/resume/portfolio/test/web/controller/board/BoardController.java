@@ -25,7 +25,7 @@ public class BoardController {
             model.addAttribute("userList", user);
         }
 
-        return "/board/board-list";
+        return "board/board-list";
     }
 
     @GetMapping("/board/detail/{id}")
@@ -38,6 +38,6 @@ public class BoardController {
             model.addAttribute("userList", user);
         }
 
-        return "/board/board-detail";
+        return "board/board-detail";
     }
 }
