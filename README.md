@@ -45,5 +45,10 @@
 
 <img width="922" alt="board" src="https://user-images.githubusercontent.com/56714431/90774199-07fb4880-e332-11ea-969b-2c6b5dbe2c45.PNG">
 
+### BoardList GetMapping("/board") Model model, @LoginUser SessionUser user
+<img width="599" alt="boardList" src="https://user-images.githubusercontent.com/56714431/91276427-7faaf680-e7bc-11ea-8b6e-13b5f848314f.PNG">
+
+
+
 
 
