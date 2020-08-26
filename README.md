@@ -53,9 +53,25 @@
 
 - BoardSave PostMapping("/api/board") @RequestBody BoardSaveRequestDto
 
-  <img width="623" alt="boardSave" src="https://user-images.githubusercontent.com/56714431/91288108-8c831680-e7cb-11ea-9a80-00a52d10ef6c.PNG">
+  <img width="600" alt="boardSave" src="https://user-images.githubusercontent.com/56714431/91288108-8c831680-e7cb-11ea-9a80-00a52d10ef6c.PNG">
   
   <img width="435" alt="boardsave" src="https://user-images.githubusercontent.com/56714431/91288226-b6d4d400-e7cb-11ea-949d-23478d9cdeb3.PNG">
+  
+- BoardUpdate PutMapping("/api/board/{id}") @PathVariable Long id, @RequestBody BoardUpdateRequestDto
+
+ <img width="600" alt="update" src="https://user-images.githubusercontent.com/56714431/91291750-79bf1080-e7d0-11ea-829c-4165b3133977.PNG">
+ 
+ <img width="437" alt="update" src="https://user-images.githubusercontent.com/56714431/91291777-8479a580-e7d0-11ea-9ecb-b8874766d782.PNG">
+ 
+- BoardDelete DeleteMapping @PathVariable Long id
+
+ <img width="600" alt="delete" src="https://user-images.githubusercontent.com/56714431/91292636-c22afe00-e7d1-11ea-953a-aceae9e6fa27.PNG">
+
+
+
+
+
+
   
   
 
