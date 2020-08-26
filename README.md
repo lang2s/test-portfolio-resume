@@ -43,16 +43,18 @@
 
 ## Board
 
-<img width="922" alt="board" src="https://user-images.githubusercontent.com/56714431/90774199-07fb4880-e332-11ea-969b-2c6b5dbe2c45.PNG">
-
 ### BoardList GetMapping("/board") Model model, @LoginUser SessionUser user
 
-<img width="599" alt="boardList" src="https://user-images.githubusercontent.com/56714431/91276427-7faaf680-e7bc-11ea-8b6e-13b5f848314f.PNG">
+<img width="700" alt="boardList" src="https://user-images.githubusercontent.com/56714431/91276427-7faaf680-e7bc-11ea-8b6e-13b5f848314f.PNG">
 
 ### BoardDetail GetMapping("/board/detail/{id}") @PathVariable Long id, Model model, @LoginUser SessionUser user
 
-<img width="781" alt="detail" src="https://user-images.githubusercontent.com/56714431/91282203-00b9bc00-e7c4-11ea-9108-584afc6bd869.PNG"> 
-<img width="600" alt="boardDetail" src="https://user-images.githubusercontent.com/56714431/91282183-fa2b4480-e7c3-11ea-84a4-79f3683e7557.PNG">
+<img width="700" alt="boardDetail" src="https://user-images.githubusercontent.com/56714431/91282183-fa2b4480-e7c3-11ea-84a4-79f3683e7557.PNG">
+
+<img width="460" alt="detail" src="https://user-images.githubusercontent.com/56714431/91282203-00b9bc00-e7c4-11ea-9108-584afc6bd869.PNG"> 
+
+
+
 
 
 
