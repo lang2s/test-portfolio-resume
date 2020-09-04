@@ -7,8 +7,6 @@ import com.resume.portfolio.test.web.dto.board.BoardResponseDto;
 import com.resume.portfolio.test.web.dto.board.BoardSaveRequestDto;
 import com.resume.portfolio.test.web.dto.board.BoardUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -52,24 +50,11 @@ public class BoardService {
     }
 
     @Transactional(readOnly = true)
-    public List<BoardListResponseDto> findAllDesc(Pageable pageable) {
+    public List<BoardListResponseDto> findAllDesc() {
 
-        int page = (pageable.getPageNumber() == 0) ? 0 : (pageable.getPageNumber() -1);
-        pageable = PageRequest.of(page, 10);
-
-        return boardRepository.findAllDesc(pageable).stream()
-                                    .map(BoardListResponseDto::new)
-                                    .collect(Collectors.toList());
+        return boardRepository.findAllDesc().stream()
+                .map(BoardListResponseDto::new)
+                .collect(Collectors.toList());
     }
-
-//    @Transactional
-//    public Page<BoardListResponseDto> getBoardListPaging(Pageable pageable) {
-//
-//        int page = (pageable.getPageNumber() == 0) ? 0 : (pageable.getPageNumber() -1) // page는 index처럼 0부터 시작
-//        pageable = PageRequest.of(page, 10);
-//
-//        return boardRepository.findAllDesc(pageable);
-//    }
-
 
  }

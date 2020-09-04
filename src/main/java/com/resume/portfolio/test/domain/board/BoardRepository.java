@@ -1,6 +1,5 @@
 package com.resume.portfolio.test.domain.board;
 
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -8,7 +7,7 @@ import java.util.List;
 
 public interface BoardRepository extends JpaRepository<Board, Long> {
 
-    @Query("SELECT p FROM Board p ORDER BY p.id DESC")
-    List<Board> findAllDesc(Pageable pageable);
+    @Query("SELECT b FROM Board b ORDER BY b.id DESC")
+    List<Board> findAllDesc();
 
 }
