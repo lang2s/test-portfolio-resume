@@ -48,7 +48,7 @@ public class BoardService {
 
         return new BoardResponseDto(entity);
     }
-
+// sd
     @Transactional(readOnly = true)
     public List<BoardListResponseDto> findAllDesc() {
 
