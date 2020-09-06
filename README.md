@@ -7,11 +7,10 @@
 + intelliJ
 + Gradle 4.10.2 
 + java8(JDK 1.8)
-+ JPA
++ SpringDataJpa
 + SprigBoot 2.0
 + 단위 테스트
 + H2(테스트용 데이터 베이스)
-+ SpringDataJpa & Querydsl
 + Mustache, bootstrap 4.3.1
 + OAuth2
 + AWS(IaaS), RDS(MariaDB), E3, CodeDeploy, EC2, putty
