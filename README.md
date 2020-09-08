@@ -16,6 +16,7 @@
 + AWS(IaaS), RDS(MariaDB), E3, CodeDeploy, EC2, putty
 + google, Naver login Api
 + Travis Ci
++ Nginx
 
 ---------------------------------------------------------------------
 
